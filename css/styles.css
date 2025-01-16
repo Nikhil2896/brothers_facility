@@ -1,0 +1,54 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+.navbar-light {
+  transition: 500ms ease;
+  background: transparent;
+}
+.navbar-light a,
+.navbar-light .navbar-nav .nav-item .nav-link,
+.navbar-light .navbar-brand,
+.navbar-light .toggle_button {
+  color: #000000;
+  margin-right: 30px;
+  /* font-weight: 700; */
+}
+#my-navbar {
+  margin-top: 40px;
+}
+/* .navbar-light.scrolled {
+  background-color: #000000;
+}
+.navbar-light.scrolled a,
+.navbar-light.scrolled .navbar-nav .nav-item .nav-link,
+.navbar-light.scrolled .navbar-brand,
+.navbar-light.scrolled .toggle_button {
+  color: #ffffff;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light.scrolled .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-brand:hover,
+.navbar-light.scrolled .navbar-brand:hover,
+.navbar-light .toggle_button :hover,
+.navbar-light.scrolled .toggle_button :hover {
+  color: #000000;
+} */
+.top-bar {
+  background-color: #000000;
+  text-align: center;
+  z-index: 1050;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  padding: 10px 25px;
+}
+.header-icon {
+  font-size: 20px;
+}
+.header-button {
+  margin: 0px 15px;
+}
