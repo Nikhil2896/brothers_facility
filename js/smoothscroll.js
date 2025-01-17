@@ -10,17 +10,19 @@ $(document).ready(function () {
       var hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $("html, body").animate(
         {
-          scrollTop: $(hash).offset().top,
+          scrollTop: $(hash).offset().top - 100, // Scroll 100 pixels more
         },
-        800,
-        function () {
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        }
+        800
       );
+
+      // Optionally, update the URL without jumping
+      if (history.pushState) {
+        history.pushState(null, null, hash);
+      } else {
+        window.location.hash = hash; // Fallback for older browsers
+      }
     } // End if
   });
 });
