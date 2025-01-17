@@ -164,6 +164,8 @@ body {
 }
 #aboutUs {
   padding: 100px;
+  text-align: center;
+  margin: 50px auto;
 }
 .history-carousel {
   overflow: hidden;
@@ -197,4 +199,15 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+}
+#aboutUs h1 {
+  margin-bottom: 60px;
+}
+.aboutUs-container {
+  border: 2px solid #7ec7ff;
+  height: 540px;
+  width: 1070px;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
 }
