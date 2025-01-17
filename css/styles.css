@@ -17,7 +17,7 @@ body {
   /* font-weight: 700; */
 }
 #my-navbar {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 /* .navbar-light.scrolled {
   background-color: #000000;
@@ -38,17 +38,30 @@ body {
 } */
 .top-bar {
   background-color: #000000;
-  text-align: center;
   z-index: 1050;
   position: fixed;
   width: 100%;
   top: 0;
   display: flex;
-  padding: 10px 25px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
 }
 .header-icon {
   font-size: 20px;
 }
 .header-button {
-  margin: 0px 15px;
+  margin: 0px 20px;
+}
+.header_icons {
+  display: flex;
+  padding: 0px 25px;
+}
+.gradient-btn {
+  background: linear-gradient(to right, #4cafef, #2c6489);
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 5px 20px;
+  font-size: 16px;
 }
