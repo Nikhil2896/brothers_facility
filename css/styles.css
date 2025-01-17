@@ -91,9 +91,70 @@ body {
 .content {
   position: relative;
   z-index: 2;
-  max-width: 700px; /* Constrain content width */
+  max-width: 700px;
   padding: 0 15px;
 }
 .book-service {
   padding: 10px 30px;
+}
+.services {
+  padding: 100px;
+}
+.services-desc {
+  margin-bottom: 100px;
+}
+.custom-card {
+  width: 240px;
+  min-height: 450px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+.custom-card img {
+  width: 100%;
+  height: auto;
+}
+.custom-card p {
+  margin: 15px;
+  font-size: 16px;
+  color: #000000;
+}
+.carousel-css {
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+.carousel-css-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.carousel-css-item {
+  flex: 0 0 auto;
+  padding: 10px;
+}
+.carousel-css-item img {
+  width: 100%;
+  height: auto;
+}
+.carousel-css-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  z-index: 1;
+  border-radius: 5px;
+  right: 0px;
+}
+.carousel-css-button:focus {
+  outline: none;
+}
+.more p {
+  color: #b6b6b6;
 }

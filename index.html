@@ -86,14 +86,149 @@
         </div>
       </div>
     </nav>
-    <div class="full-width-bg">
+    <div class="full-width-bg" id="home">
       <div class="dark-overlay"></div>
       <div class="content">
         <h1>Cleaning Excellence, Every Time</h1>
         <p class="mt-3">
-          Impeccable cleaning services, every time. Experience excellence! Impeccable cleaning services, every time. Experience excellence !  
+          Impeccable cleaning services, every time. Experience excellence!
+          Impeccable cleaning services, every time. Experience excellence!
+          Impeccable cleaning services, every time. Experience excellence !
         </p>
         <button class="gradient-btn book-service mt-3">Book a Service</button>
       </div>
+    </div>
+    <div id="services" class="services">
+      <h1 class="mb-3">Services We Provide</h1>
+      <p class="services-desc">
+        Welcome to Brothers Facility, where we're dedicated to providing
+        top-notch cleaning services to meet all your needs. From residential
+        cleaning to commercial janitorial services, we've got you covered. Click
+        'View More' below to discover the full range of services we offer
+      </p>
+      <div class="images_view">
+        <div class="carousel-css">
+          <!-- <button
+            class="carousel-css-button left-button-css"
+            onclick="scrollCarousel(-1, 0)"
+          >
+            &larr;
+          </button> -->
+          <div class="carousel-css-wrapper">
+            <div class="carousel-css-item">
+              <div class="custom-card">
+                <img
+                  src="assets/Images/service_image1.png"
+                  alt="Sample Image"
+                />
+                <p>
+                  Say goodbye to the stress of end-of-lease cleaning with our
+                  expert services. We ensure your rental property shines,
+                  helping you secure that deposit hassle-free.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-css-item">
+              <div class="custom-card">
+                <img
+                  src="assets/Images/service_image2.png"
+                  alt="Sample Image"
+                />
+                <p>
+                  Maintain a clean and professional workspace with our reliable
+                  commercial cleaning services.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-css-item">
+              <div class="custom-card">
+                <img
+                  src="assets/Images/service_image3.png"
+                  alt="Sample Image"
+                />
+                <p>
+                  Keep your lawn looking lush and well-maintained with our
+                  expert lawn mowing service.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-css-item">
+              <div class="custom-card">
+                <img
+                  src="assets/Images/service_image1.png"
+                  alt="Sample Image"
+                />
+                <p>
+                  Say goodbye to the stress of end-of-lease cleaning with our
+                  expert services. We ensure your rental property shines,
+                  helping you secure that deposit hassle-free.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-css-item">
+              <div class="custom-card">
+                <img
+                  src="assets/Images/service_image2.png"
+                  alt="Sample Image"
+                />
+                <p>
+                  Maintain a clean and professional workspace with our reliable
+                  commercial cleaning services.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-css-item">
+              <div class="custom-card">
+                <img
+                  src="assets/Images/service_image3.png"
+                  alt="Sample Image"
+                />
+                <p>
+                  Keep your lawn looking lush and well-maintained with our
+                  expert lawn mowing service.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-css-button right-button-css more"
+            onclick="scrollCarousel(1, 0)"
+          >
+            <img src="assets/Icons/next.png" alt="View More" />
+            <p>View More</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="aboutUs"></div>
+    <div id="faqs"></div>
+    <div id="contact"></div>
+    <script>
+      const carouselContainers = document.querySelectorAll(
+        ".carousel-css-wrapper"
+      );
+      const totalContainers = carouselContainers.length;
+      const visibleItems = 4;
+
+      function scrollCarousel(direction, index) {
+        const carouselWrapper = carouselContainers[index];
+        const carouselItems =
+          carouselWrapper.querySelectorAll(".carousel-css-item");
+        const totalItems = carouselItems.length;
+        let currentIndex = parseInt(carouselWrapper.dataset.currentIndex) || 0;
+
+        currentIndex = currentIndex + direction;
+        if (currentIndex < 0) {
+          currentIndex = 0;
+        } else if (currentIndex > totalItems - visibleItems) {
+          currentIndex = totalItems - visibleItems;
+        }
+
+        carouselWrapper.dataset.currentIndex = currentIndex;
+
+        const newPosition = -currentIndex * (carouselItems[0].offsetWidth + 10);
+        carouselWrapper.style.transform = `translateX(${newPosition}px)`;
+      }
+    </script>
   </body>
 </html>
