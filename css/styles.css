@@ -158,3 +158,43 @@ body {
 .more p {
   color: #b6b6b6;
 }
+#history {
+  padding: 100px;
+  background-color: #282828;
+}
+#aboutUs {
+  padding: 100px;
+}
+.history-carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.history-carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.history-carousel-item {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+}
+.history-card {
+  text-align: center;
+}
+.history-dot {
+  display: inline-block;
+  width: 75px;
+  height: 7px;
+  margin: 0 5px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+.history-dot.active {
+  background-color: #4aabea;
+}
+.history-carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
