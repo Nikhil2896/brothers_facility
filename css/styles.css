@@ -211,3 +211,14 @@ body {
   margin: 0 auto;
   background-color: #f9f9f9;
 }
+.bg-gradient {
+  background: linear-gradient(to right, #010001, #012d4b);
+}
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  color: #7ec7ff;
+}
