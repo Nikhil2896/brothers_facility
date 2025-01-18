@@ -222,3 +222,25 @@ body {
   text-decoration: underline;
   color: #7ec7ff;
 }
+#faqs {
+  padding: 100px;
+}
+.faq-answers .answer {
+  display: none;
+}
+.faq-answers .answer.active {
+  display: block;
+}
+#faq-questions .list-group-item {
+  cursor: pointer;
+}
+#faq-questions .list-group-item.active {
+  background-color: #000000;
+  color: #fff;
+  border: #000000;
+  border-radius: 5px;
+}
+.faq-view {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
