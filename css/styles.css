@@ -185,6 +185,29 @@ body {
   align-items: center;
   margin-top: 20px;
 }
+.history-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+}
+.left-arrow {
+  left: 10px;
+}
+.right-arrow {
+  right: 10px;
+}
+.history-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 #aboutUs h1 {
   margin-bottom: 60px;
 }
