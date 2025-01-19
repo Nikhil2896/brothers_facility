@@ -14,38 +14,18 @@ body {
 .navbar-light .toggle_button {
   color: #000000;
   margin-right: 30px;
-  /* font-weight: 700; */
 }
 #my-navbar {
-  margin-top: 50px;
+  margin-top: 44px;
 }
-/* .navbar-light.scrolled {
-  background-color: #000000;
-}
-.navbar-light.scrolled a,
-.navbar-light.scrolled .navbar-nav .nav-item .nav-link,
-.navbar-light.scrolled .navbar-brand,
-.navbar-light.scrolled .toggle_button {
-  color: #ffffff;
-}
-.navbar-light .navbar-nav .nav-item .nav-link:hover,
-.navbar-light.scrolled .navbar-nav .nav-item .nav-link:hover,
-.navbar-light .navbar-brand:hover,
-.navbar-light.scrolled .navbar-brand:hover,
-.navbar-light .toggle_button :hover,
-.navbar-light.scrolled .toggle_button :hover {
-  color: #000000;
-} */
 .top-bar {
   background-color: #000000;
-  z-index: 1050;
   position: fixed;
   width: 100%;
   top: 0;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 10px 0px 7px 0px;
 }
 .header-icon {
   font-size: 20px;
@@ -144,16 +124,21 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
   border: none;
   padding: 10px;
   font-size: 20px;
   z-index: 1;
   border-radius: 5px;
-  right: 0px;
 }
 .carousel-css-button:focus {
   outline: none;
+}
+.left-button-css-css {
+  left: 0;
+}
+.right-button-css {
+  right: 0;
 }
 .more p {
   color: #b6b6b6;
