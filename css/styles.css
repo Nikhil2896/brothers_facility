@@ -16,11 +16,12 @@ body {
   margin-right: 30px;
 }
 #my-navbar {
-  margin-top: 44px;
+  margin-top: 40px;
 }
 .top-bar {
   background-color: #000000;
   position: fixed;
+  z-index: 1050;
   width: 100%;
   top: 0;
   justify-content: space-between;
