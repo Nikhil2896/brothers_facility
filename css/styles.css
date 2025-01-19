@@ -18,6 +18,10 @@ body {
 #my-navbar {
   margin-top: 40px;
 }
+.navbar-light .nav-item .nav-link.active {
+  color: #4badec;
+  font-weight: bold;
+}
 .top-bar {
   background-color: #000000;
   position: fixed;
