@@ -38,4 +38,19 @@ document.addEventListener("DOMContentLoaded", () => {
   rightArrow.addEventListener("click", () => updateCarousel("right"));
 
   navigateHistoryCarousel(0);
+
+  const autoScrollInterval = setInterval(() => {
+    updateCarousel("right");
+  }, 3000);
+
+  const historyCarousel = document.querySelector(".history-carousel");
+  historyCarousel.addEventListener("mouseenter", () => {
+    clearInterval(autoScrollInterval);
+  });
+
+  historyCarousel.addEventListener("mouseleave", () => {
+    setInterval(() => {
+      updateCarousel("right");
+    }, 5000);
+  });
 });
