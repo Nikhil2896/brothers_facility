@@ -76,8 +76,14 @@ body {
 }
 .services {
   padding: 100px;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+@media screen and (max-width: 550px) {
+  .services {
+    padding: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
 }
 .services-desc {
   margin-bottom: 100px;
@@ -102,9 +108,10 @@ body {
 }
 .carousel-css {
   width: 90%;
-  overflow: hidden;
+  overflow-x: auto; 
   margin: 0 auto;
   position: relative;
+
 }
 .carousel-css-wrapper {
   display: flex;
@@ -331,4 +338,40 @@ body {
     transform: scale(1.05); 
     opacity: 0; 
   }
+}
+
+
+.text-start {
+  text-align: start;
+}
+@media (max-width: 550px) {
+  .hide-nav-arrows{
+    display: none ;
+  }
+  
+}
+
+@media screen and (max-width: 550px) {
+  #aboutUs {
+    padding: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+}
+.services-heading{
+   size: 20px;
+   font: 1.3em sans-serif;
+   margin-top:12px;
+}
+
+.images_view::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.images_view {
+  overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
