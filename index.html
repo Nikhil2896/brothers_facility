@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="assets/Icons/tab_icon.png" />
+    <link rel="icon" href="assets/Icons/favicon.jpeg" />
     <title>Brothers Facility</title>
     <link
       rel="stylesheet"
@@ -73,11 +73,11 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#history">History</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#aboutUs">About Us</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#aboutUs">About Us</a>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact"
                 >Contact Us</a
@@ -297,9 +297,11 @@
         </div>
       </div>
     </div>
-    <div id="history">
+    <div id="aboutUs">
       <div class="history-carousel">
-        <button class="history-arrow left-arrow">&lt;</button>
+        <button class="history-arrow left-arrow">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
         <div class="history-carousel-wrapper">
           <div class="history-carousel-item">
             <div class="container py-5">
@@ -374,7 +376,9 @@
             </div>
           </div>
         </div>
-        <button class="history-arrow right-arrow">&gt;</button>
+        <button class="history-arrow right-arrow">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
         <div class="history-carousel-dots mt-3">
           <span class="history-dot"></span>
           <span class="history-dot"></span>
@@ -620,16 +624,15 @@
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 
       const firebaseConfig = {
-        apiKey: "AIzaSyCsH-C1--HiE4a4XY0xzl0tmY6QzCmebGA",
-        authDomain: "brothers-facility.firebaseapp.com",
-        databaseURL: "https://brothers-facility-default-rtdb.firebaseio.com",
-        projectId: "brothers-facility",
-        storageBucket: "brothers-facility.firebasestorage.app",
-        messagingSenderId: "875466199741",
-        appId: "1:875466199741:web:f8ec6c64ca01dc13489dd4",
-        measurementId: "G-TJKDE35LXD",
-      };
-
+  apiKey: "AIzaSyBiRQmwd2ogwaT_lkOo7xVFkwfse2HZDgQ",
+  authDomain: "brothersfacility-ea3f3.firebaseapp.com",
+  databaseURL: "https://brothersfacility-ea3f3-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "brothersfacility-ea3f3",
+  storageBucket: "brothersfacility-ea3f3.firebasestorage.app",
+  messagingSenderId: "164927801416",
+  appId: "1:164927801416:web:2645c2d61cbdcb86eab07d",
+  measurementId: "G-RLM98P84M6"
+};
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
 
