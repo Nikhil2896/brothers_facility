@@ -10,6 +10,10 @@ body {
   justify-content: space-between;
   background-color: #000000;
   padding: 10px 20px;
+  z-index: 1050;
+  width: 100%;
+  top: 0;
+  position: fixed;
 }
 .header_icons {
   display: flex;
@@ -33,6 +37,14 @@ body {
   font-size: larger !important;
   text-decoration: none;
   margin: 0 10px;
+}
+.nav-link.active {
+  color: #4badec;
+  font-weight: bold;
+}
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: background-color 0.3s ease-in-out;
 }
 .full-width-bg {
   background-image: url("../assets/Images/home_image.png");
