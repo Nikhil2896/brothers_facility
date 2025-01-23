@@ -45,6 +45,7 @@ body {
   align-items: center;
   text-align: center;
   color: white;
+  margin-top: 110px;
 }
 .dark-overlay {
   position: absolute;
@@ -217,7 +218,6 @@ body {
   font-size: 14px;
 }
 .nav-link:hover {
-  text-decoration: underline;
   color: #7ec7ff;
 }
 #faqs {
